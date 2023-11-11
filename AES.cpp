@@ -500,7 +500,7 @@ void AESDecrypt(unsigned char * encryptedMessage, unsigned char * expandedKey, u
 }
 
 
-int main() {
+void AES() {
     cout << "=============================" << endl;
     cout << "128-bit AES Encryption/Decryption Tool" << endl;
     cout << "=============================" << endl;
@@ -555,14 +555,14 @@ int main() {
     for (int i = 0; i < originalLen; i++) {
         cout << decryptedMessage[i];
     }
-    cout << endl;
+    cout << endl << endl;
 
     // Clean up
     delete[] paddedMessage;
     delete[] encryptedMessage;
     delete[] decryptedMessage;
 
-    return 0;
+    // return 0;
 }
 
 

@@ -94,7 +94,11 @@ string decodeMessage(vector<int> encoded) {
     return decodedMessage;
 }
 
-int main() {
+void RSA() {
+    cout << "=============================" << endl;
+    cout << "              RSA            " << endl;
+    cout << "=============================" << endl;
+
     fillPrimes();
     setKeys();
 
@@ -112,5 +116,5 @@ int main() {
     cout << "\n\nThe decoded message (decrypted by private key):\n";
     cout << decodeMessage(encodedMessage) << endl;
 
-    return 0;
+    // return 0;
 }

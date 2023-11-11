@@ -244,14 +244,19 @@ string sha512(const string& input) {
     return output.str();
 }
 
-int main() {
+void SHA512() {
+    
+    cout << "=============================" << endl;
+    cout << "           SHA512            " << endl;
+    cout << "=============================" << endl;
+
     // User Input
     cout << "Enter a string: ";
-    string userInput;
+    string userInput, result;
     getline(cin, userInput);
 
     // Function Call
-    cout << "SHA-512 Hash: " << sha512(userInput) << endl;
+    cout << endl << "SHA-512 Hash: " << sha512(userInput) << endl;
 
-    return 0;
+    // return 0;
 }
