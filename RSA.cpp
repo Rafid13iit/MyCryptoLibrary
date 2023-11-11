@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+typedef long long int lli;
+
 set<int> primes; // Collection of prime numbers
 int public_key;  // Public key for encryption
 int private_key; // Private key for decryption
@@ -57,9 +59,9 @@ void setKeys() {
 }
 
 // Function to encrypt the given number using the public key
-long long int encrypt(double message) {
+lli encrypt(double message) {
     int e = public_key;
-    long long int encrypted_text = 1;
+    lli encrypted_text = 1;
     while (e--) {
         encrypted_text *= message;
         encrypted_text %= n;
@@ -68,9 +70,9 @@ long long int encrypt(double message) {
 }
 
 // Function to decrypt the given number using the private key
-long long int decrypt(int encrypted_text) {
+lli decrypt(int encrypted_text) {
     int d = private_key;
-    long long int decrypted = 1;
+    lli decrypted = 1;
     while (d--) {
         decrypted *= encrypted_text;
         decrypted %= n;

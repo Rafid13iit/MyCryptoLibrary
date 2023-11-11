@@ -1,0 +1,2 @@
+g++ .\main.cpp .\AES.cpp .\RSA.cpp .\SHA-512.cpp
+./a.exe
