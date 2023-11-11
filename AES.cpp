@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <cstring>
 using namespace std;
+
 // Encryption: Forward Rijndael S-box 
 unsigned char s[256] =
 {
