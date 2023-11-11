@@ -1,6 +1,4 @@
-#include "AES.h"
-#include "RSA.h"
-#include "SHA-512.h"
+#include "crypto_lib.h"
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,7 +6,7 @@ using namespace std;
 
 int main() {
 
-    // AES();
+    AES();
 
     RSA();
 
